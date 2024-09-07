@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" rows="4" placeholder="Your education details..." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="workExperience">Work Experience:</label>
+                <textarea id="workExperience" name="workExperience" rows="4" placeholder="Your work experience..." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="Your skills..." required></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resumeOutput" class="resume-output">
+            <!-- Generated resume will appear here -->
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
